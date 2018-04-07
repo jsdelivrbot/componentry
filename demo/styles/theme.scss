@@ -1,6 +1,7 @@
 /* demo/styles/theme */
 
 // Theme Variables
+
 // This theme file contains the complete theme declaration for the application, it
 // can be imported into any component file.
 
@@ -104,6 +105,10 @@ $modal-content-box-shadow-sm-up: 0 5px 15px rgba(149, 165, 175, 0.7);
 // Close
 
 $close-color: $gray-700;
+
+// Mobile only variables
+
+$mobile-headings-size: 0.75;
 
 // Syntax Highlighting Variables
 

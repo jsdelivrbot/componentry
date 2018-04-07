@@ -1,5 +1,19 @@
 Jetpack styles collection
 
+## Display headings
+
+<h1 className="display-1">Adventures</h1>
+<h2 className="display-2">Adventures</h2>
+<h3 className="display-3">Adventures</h3>
+<h4 className="display-4">Adventures</h4>
+
+## Headings
+
+# Adventures in development
+## Adventures in development
+### Adventures in development
+#### Adventures in development
+
 ## Icons
 
 ## Grays

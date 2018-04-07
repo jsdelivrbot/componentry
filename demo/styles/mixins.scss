@@ -1,0 +1,24 @@
+/* demo/styles/mixins */
+
+// Theme mixins
+
+// Import all mixins from Bootstrap and the application using this file
+
+// Import Bootstrap mixins
+@import '~bootstrap/scss/mixins';
+
+// Custom mixins
+
+// Include styles for small screens only
+@mixin small-only() {
+  @media (max-width: map-get($map: $grid-breakpoints, $key: 'sm')) {
+    @content;
+  }
+}
+
+// Include styles for large screens only
+@mixin large-only() {
+  @media (min-width: map-get($map: $grid-breakpoints, $key: 'lg')) {
+    @content;
+  }
+}

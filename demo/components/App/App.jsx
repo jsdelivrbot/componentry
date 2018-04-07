@@ -24,6 +24,9 @@ import SetupScreen from '../SetupScreen'
 import HomeScreen from '../HomeScreen'
 import JetpackScreen from '../JetpackScreen'
 
+// App styles
+import './app.scss'
+
 // ========================================================
 // Componentry Theme Customization
 // ========================================================

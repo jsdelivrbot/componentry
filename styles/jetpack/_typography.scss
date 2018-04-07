@@ -1,0 +1,25 @@
+/* componentry/styles/jetpack/typography */
+
+$mobile-header-adjustment: 0.9;
+
+@media (max-width: map-get($map: $grid-breakpoints, $key: 'sm')) {
+  h1,
+  .h1 {
+    font-size: $h1-font-size * $mobile-header-adjustment;
+  }
+
+  h2,
+  .h2 {
+    font-size: $h2-font-size * $mobile-header-adjustment;
+  }
+
+  h3,
+  .h3 {
+    font-size: $h3-font-size * $mobile-header-adjustment;
+  }
+
+  h4,
+  .h4 {
+    font-size: $h4-font-size * $mobile-header-adjustment;
+  }
+}

@@ -1,0 +1,48 @@
+/* demo/components/App */
+
+@import 'theme';
+@import 'mixins';
+
+:root {
+  --spacer-5: 3.5rem;
+}
+
+@include large-only() {
+  :root {
+    --spacer-5: 5rem;
+  }
+}
+
+@mixin app-section-spacing($spacing) {
+  .mb-app {
+    margin-bottom: $spacing;
+  }
+
+  .pb-app {
+    padding-bottom: $spacing;
+  }
+
+  .mt-app {
+    margin-top: $spacing;
+  }
+
+  .pt-app {
+    padding-top: $spacing;
+  }
+
+  .my-app {
+    margin-bottom: $spacing;
+    margin-top: $spacing;
+  }
+
+  .py-app {
+    padding-bottom: $spacing;
+    padding-top: $spacing;
+  }
+}
+
+@include app-section-spacing(map-get($spacers, 4));
+
+@include large-only() {
+  @include app-section-spacing(map-get($spacers, 5));
+}
